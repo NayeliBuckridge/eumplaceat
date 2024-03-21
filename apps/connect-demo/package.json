@@ -1,0 +1,19 @@
+{
+  "name": "@lit-web3/connect-demo",
+  "version": "0.0.1",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "vite --host --mode development",
+    "build": "vite build",
+    "preinstall": "npx only-allow pnpm"
+  },
+  "dependencies": {
+    "@doid/connect": "workspace:latest",
+    "@doid/connect-ethers": "workspace:latest",
+    "@doid/node-shims": "workspace:latest",
+    "@lit-web3/dui": "workspace:latest",
+    "@lit-web3/ethers": "workspace:latest"
+  },
+  "license": "MIT"
+}

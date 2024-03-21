@@ -1,0 +1,20 @@
+{
+    "private": true,
+    "name": "@lit-web3/solana-wallet-standard",
+    "scripts": {
+        "build": "tsup src/index.ts --outDir ./lib --format esm,cjs --dts --clean",
+        "prepublishOnly": "npm run build"
+    },
+    "dependencies": {
+        "@solana/wallet-standard-features": "^1.1.0",
+        "@solana/web3.js": "^1.87.6",
+        "@wallet-standard/base": "^1.0.1",
+        "@wallet-standard/features": "^1.0.3"
+    },
+    "devDependencies": {
+        "@types/bs58": "^4.0.4",
+        "@types/node-fetch": "^2.6.9",
+        "shx": "^0.3.4",
+        "tsup": "^7.2.0"
+    }
+}
